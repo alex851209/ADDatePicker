@@ -1,16 +1,16 @@
 PODS:
-  - ADDatePicker (0.9.2)
+  - ADDatePicker (1.0.0)
 
 DEPENDENCIES:
   - ADDatePicker
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ADDatePicker
 
 SPEC CHECKSUMS:
-  ADDatePicker: 4c3e992daba7df5df270c40628725c337b669fb3
+  ADDatePicker: 62cd9bb25b71b261bbd008020ea9347b84979873
 
 PODFILE CHECKSUM: 553611b398f3a8bb1926b04b5f27bb10c88492de
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0

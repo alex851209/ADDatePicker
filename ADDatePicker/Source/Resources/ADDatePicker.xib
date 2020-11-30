@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uue-S1-AeU">
+                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uue-S1-AeU">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="66.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="us4-zh-oyM">
@@ -54,7 +52,7 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-kS-exU">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-kS-exU">
                     <rect key="frame" x="0.0" y="65.5" width="300" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
@@ -66,18 +64,18 @@
                     </constraints>
                 </view>
                 <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-Iv-0PB">
-                    <rect key="frame" x="115" y="0.0" width="70" height="200"/>
+                    <rect key="frame" x="115" y="66.5" width="70" height="133.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="nkL-vF-nWx"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="n5m-Iv-0PB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1dH-SL-3Qr"/>
                 <constraint firstItem="XZ8-kS-exU" firstAttribute="height" secondItem="SBt-fm-atM" secondAttribute="height" id="5iI-WU-U7P"/>
-                <constraint firstItem="n5m-Iv-0PB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6HB-Pm-qRe"/>
                 <constraint firstItem="uue-S1-AeU" firstAttribute="height" secondItem="fTz-JR-Jat" secondAttribute="height" id="7JL-5H-w0z"/>
                 <constraint firstItem="SBt-fm-atM" firstAttribute="top" secondItem="B3j-qb-uoa" secondAttribute="bottom" id="8mY-BY-Npj"/>
                 <constraint firstItem="fTz-JR-Jat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9xk-uK-iGv"/>
@@ -95,11 +93,12 @@
                 <constraint firstItem="uue-S1-AeU" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="h3g-gH-LOE"/>
                 <constraint firstItem="XZ8-kS-exU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kiS-bb-CIP"/>
                 <constraint firstItem="fTz-JR-Jat" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="msR-yB-dsM"/>
+                <constraint firstItem="n5m-Iv-0PB" firstAttribute="top" secondItem="uue-S1-AeU" secondAttribute="bottom" id="xCN-au-LuH"/>
                 <constraint firstItem="SBt-fm-atM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xQ2-i1-EZe"/>
                 <constraint firstItem="n5m-Iv-0PB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y5R-zm-Oal"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-27.199999999999999" y="122.33883058470765"/>
         </view>
     </objects>
 </document>
