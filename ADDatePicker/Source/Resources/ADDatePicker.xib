@@ -23,8 +23,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uue-S1-AeU">
-                    <rect key="frame" x="0.0" y="0.0" width="300" height="66.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="0.0"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="eda-MM-efw"/>
+                    </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="us4-zh-oyM">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -33,7 +36,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B3j-qb-uoa">
-                    <rect key="frame" x="0.0" y="66.5" width="300" height="66"/>
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h9x-Fo-rSO">
                         <size key="itemSize" width="50" height="50"/>
@@ -43,7 +46,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-JR-Jat">
-                    <rect key="frame" x="0.0" y="133.5" width="300" height="66.5"/>
+                    <rect key="frame" x="0.0" y="101" width="300" height="99"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lTu-mm-jLz">
                         <size key="itemSize" width="50" height="50"/>
@@ -53,18 +56,18 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-kS-exU">
-                    <rect key="frame" x="0.0" y="65.5" width="300" height="1"/>
+                    <rect key="frame" x="0.0" y="-1" width="300" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBt-fm-atM">
-                    <rect key="frame" x="0.0" y="132.5" width="300" height="1"/>
+                    <rect key="frame" x="0.0" y="100" width="300" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="yP9-VS-Ycp"/>
                     </constraints>
                 </view>
                 <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5m-Iv-0PB">
-                    <rect key="frame" x="115" y="66.5" width="70" height="133.5"/>
+                    <rect key="frame" x="115" y="0.0" width="70" height="200"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="nkL-vF-nWx"/>
@@ -76,13 +79,12 @@
             <constraints>
                 <constraint firstItem="n5m-Iv-0PB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1dH-SL-3Qr"/>
                 <constraint firstItem="XZ8-kS-exU" firstAttribute="height" secondItem="SBt-fm-atM" secondAttribute="height" id="5iI-WU-U7P"/>
-                <constraint firstItem="uue-S1-AeU" firstAttribute="height" secondItem="fTz-JR-Jat" secondAttribute="height" id="7JL-5H-w0z"/>
                 <constraint firstItem="SBt-fm-atM" firstAttribute="top" secondItem="B3j-qb-uoa" secondAttribute="bottom" id="8mY-BY-Npj"/>
                 <constraint firstItem="fTz-JR-Jat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9xk-uK-iGv"/>
                 <constraint firstAttribute="trailing" secondItem="SBt-fm-atM" secondAttribute="trailing" id="AcW-pP-2pg"/>
+                <constraint firstItem="B3j-qb-uoa" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="BsS-gR-Gzq"/>
                 <constraint firstItem="B3j-qb-uoa" firstAttribute="trailing" secondItem="SBt-fm-atM" secondAttribute="trailing" id="CA6-IF-kKR"/>
                 <constraint firstItem="B3j-qb-uoa" firstAttribute="top" secondItem="uue-S1-AeU" secondAttribute="bottom" id="CYa-Mf-64b"/>
-                <constraint firstItem="uue-S1-AeU" firstAttribute="height" secondItem="B3j-qb-uoa" secondAttribute="height" id="Cpg-bp-aZV"/>
                 <constraint firstItem="fTz-JR-Jat" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ek2-Vi-QKH"/>
                 <constraint firstAttribute="trailing" secondItem="XZ8-kS-exU" secondAttribute="trailing" id="Hn7-RO-50Q"/>
                 <constraint firstItem="fTz-JR-Jat" firstAttribute="top" secondItem="SBt-fm-atM" secondAttribute="bottom" id="Kel-kA-jhl"/>
